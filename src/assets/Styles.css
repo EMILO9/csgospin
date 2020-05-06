@@ -33,7 +33,7 @@ body {
     padding: 4px;
 }
 .menuAvatar {
-    background-image: url('https://i1.wp.com/atechguides.org/wp-content/uploads/2018/11/steam-avatar-profile-picture-0043.jpg?fit=184%2C184&ssl=1');
+    background-image: url('./avatar.jpg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
