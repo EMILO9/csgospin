@@ -75,7 +75,7 @@ export default {
   methods: {
     sendMessage () {
       if (this.text.length >= 1) {
-        this.messages.push({User: 'User', Msg: this.text, Posted: new Date().toLocaleTimeString()})
+        this.messages.push({User: this.User.Name, Msg: this.text, Posted: new Date().toLocaleTimeString()})
         this.text = ''
       }
     },
