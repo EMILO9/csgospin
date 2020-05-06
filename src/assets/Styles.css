@@ -28,15 +28,25 @@ body {
     background-color: #181818;
     width: min-content;
     display: grid;
-    grid-template-columns: 40px min-content min-content 40px 40px 40px;
-    gap: 4px;
+    grid-template-columns: 40px repeat(6, min-content);
+    /* gap: 4px; */
     padding: 4px;
+    -webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
 }
 .menuAvatar {
     background-image: url('./avatar.jpg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    margin: 4px;
+}
+.avatarWrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: rgba(0, 0, 0, 0.274);
 }
 .menuName {
     color: white;
@@ -73,8 +83,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.274);
-    padding-left: 10px;
-    padding-right: 10px;
     cursor: pointer;
     border: none;
     color: #303030;
@@ -103,6 +111,9 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     cursor: pointer;
+    -webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
 }
 
 .gameModeActive {
@@ -151,6 +162,19 @@ body {
 }
 .chatMessage:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.075);
+}
+.chatUserWrapper {
+    width: min-content;
+    display: grid;
+    grid-template-columns: 20px min-content;
+    gap: 4px;
+}
+.chatAvatar {
+    background-color: red;
+    background-image: url('./avatar.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
 }
 .User {
     border-bottom: solid #181818 4px;
@@ -208,6 +232,12 @@ body {
 .Footer {
     background-color: #202020;
     border: solid #303030 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #303030;
+    font-family: 'Source Sans Pro', sans-serif;
+    user-select: none;
 }
 
 .underConstruction {
