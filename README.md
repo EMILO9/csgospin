@@ -1,7 +1,7 @@
 # csgospin
 
-> csgospin
-> demo of early prototype build: https://emilo9.github.io/csgospin/
+> Early prototype for CSGOSpin.
+> Demo: https://emilo9.github.io/csgospin/
 
 ## Build Setup
 
